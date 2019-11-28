@@ -1,25 +1,61 @@
-## IIS‚ÌƒCƒ“ƒXƒg[ƒ‹
+## IISã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
-1. [‚±‚±](https://docs.microsoft.com/ja-jp/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)‚ğQl‚É‚µ‚Ü‚·B
-2. [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)‚ğ“üè‚µ‚ÄƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
-3. [ƒRƒ“ƒgƒ[ƒ‹ƒpƒlƒ‹] > [ƒvƒƒOƒ‰ƒ€] > [Windows‚Ì‹@”\‚Ì—LŒø‰»‚Ü‚½‚Í–³Œø‰»]‚ğŠJ‚«‚Ü‚·B
-   1. [ƒCƒ“ƒ^[ƒlƒbƒg ƒCƒ“ƒtƒHƒ[ƒVƒ‡ƒ“ ƒT[ƒrƒX] > [World Wide Web ƒT[ƒrƒX] > [ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ŠJ”­‹@”\] > [ASP.NET 4.8]‚ğ—LŒø‚É‚µ‚Ü‚·B
-   2. [ƒCƒ“ƒ^[ƒlƒbƒg ƒCƒ“ƒtƒHƒ[ƒVƒ‡ƒ“ ƒT[ƒrƒX] > [Web ŠÇ—ƒc[ƒ‹] > [IIS ŠÇ—ƒRƒ“ƒ\[ƒ‹]‚ğ—LŒø‚É‚µ‚Ü‚·B
-   3. [OK]‚ğ‰Ÿ‚·‚Æ—LŒø‚É‚µ‚½‹@”\‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ü‚·B
-4. [ƒRƒ“ƒgƒ[ƒ‹ƒpƒlƒ‹] > [ƒVƒXƒeƒ€‚ÆƒZƒLƒ…ƒŠƒeƒB] > [ŠÇ—ƒc[ƒ‹]‚ğŠJ‚«‚Ü‚·B
-   1. [ƒCƒ“ƒ^[ƒlƒbƒg ƒCƒ“ƒtƒHƒ[ƒVƒ‡ƒ“ ƒT[ƒrƒX (IIS) ƒ}ƒl[ƒWƒƒ[]‚ğƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚Ü‚·B
-   2. [ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ ƒv[ƒ‹]‚ğ‘I‘ğ‚µ‚Ä•\¦‚³‚ê‚é[DefaultAppPool]‚Ìƒo[ƒWƒ‡ƒ“‚ª[v4.0]‚Å‚ ‚é‚±‚Æ‚ğŠm”F‚µ‚Ü‚·B
-   3. [DefaultAppPool]‚ğ‘I‘ğ‚µ‚ÄA[Šî–{İ’è...]‚ğƒNƒŠƒbƒN‚µ‚Ü‚·B
-   4. [ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ ƒv[ƒ‹‚Ì•ÒW]ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚ÅA[.Net CLR ƒo[ƒWƒ‡ƒ“]‚ğ[.Net CLR ƒo[ƒWƒ‡ƒ“ v4.0.30319]‚É•ÏX‚µ‚Ü‚·B
-   5.  [OK]‚ğ‰Ÿ‚µ‚Ü‚·B
+[Visual Studio ã‚’ä½¿ç”¨ã—ãŸ ASP.NET Web é…ç½®](https://docs.microsoft.com/ja-jp/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)ã®è¨˜äº‹ã‚’å‚è€ƒã«ã—ã¾ã™ã€‚
+
+1. [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)ã‚’å…¥æ‰‹ã—ã¦ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚
+2. [ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒ‘ãƒãƒ«] > [ãƒ—ãƒ­ã‚°ãƒ©ãƒ ] > [Windowsã®æ©Ÿèƒ½ã®æœ‰åŠ¹åŒ–ã¾ãŸã¯ç„¡åŠ¹åŒ–]ã‚’é–‹ãã¾ã™ã€‚  
+   ![IIS_Config01.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/IIS_Config01.png)
+3. [ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆ ã‚¤ãƒ³ãƒ•ã‚©ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ ã‚µãƒ¼ãƒ“ã‚¹] > [World Wide Web ã‚µãƒ¼ãƒ“ã‚¹] > [ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³é–‹ç™ºæ©Ÿèƒ½] > [ASP.NET 4.8]ã‚’æœ‰åŠ¹ã«ã—ã¾ã™ã€‚  
+   [ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆ ã‚¤ãƒ³ãƒ•ã‚©ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ ã‚µãƒ¼ãƒ“ã‚¹] > [Web ç®¡ç†ãƒ„ãƒ¼ãƒ«] > [IIS ç®¡ç†ã‚³ãƒ³ã‚½ãƒ¼ãƒ«]ã‚’æœ‰åŠ¹ã«ã—ã¾ã™ã€‚  
+   [OK]ã‚’æŠ¼ã™ã¨æœ‰åŠ¹ã«ã—ãŸæ©Ÿèƒ½ãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¾ã™ã€‚  
+   ![IIS_Config02.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/IIS_Config02.png)
+4. [ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒ‘ãƒãƒ«] > [ã‚·ã‚¹ãƒ†ãƒ ã¨ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£] > [ç®¡ç†ãƒ„ãƒ¼ãƒ«]ã‚’é–‹ãã¾ã™ã€‚  
+   ![IIS_Config03.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/IIS_Config03.png)
+5. [ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆ ã‚¤ãƒ³ãƒ•ã‚©ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ ã‚µãƒ¼ãƒ“ã‚¹ (IIS) ãƒãƒãƒ¼ã‚¸ãƒ£ãƒ¼]ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚  
+   ![IIS_Config04.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/IIS_Config04.png)
+6. [ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ ãƒ—ãƒ¼ãƒ«]ã‚’é¸æŠã—ã¦è¡¨ç¤ºã•ã‚Œã‚‹[DefaultAppPool]ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒ[v4.0]ã§ã‚ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¾ã™ã€‚  
+   [DefaultAppPool]ã‚’é¸æŠã—ã¦ã€[åŸºæœ¬è¨­å®š...]ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚  
+   ![IIS_Config05.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/IIS_Config05.png)
+7. [ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ ãƒ—ãƒ¼ãƒ«ã®ç·¨é›†]ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã§ã€[.Net CLR ãƒãƒ¼ã‚¸ãƒ§ãƒ³]ã‚’[.Net CLR ãƒãƒ¼ã‚¸ãƒ§ãƒ³ v4.0.30319]ã«å¤‰æ›´ã—ã¾ã™ã€‚
+   [OK]ã‚’æŠ¼ã—ã¾ã™ã€‚
+   ![IIS_Config06.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/IIS_Config06.png)
 
 
+## MySQLã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
-## MySQL‚ÌƒCƒ“ƒXƒg[ƒ‹
+[UGS Reference](https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/Reference/index.html)ã®è¨˜äº‹ã‚’å‚è€ƒã«ã—ã¾ã™ã€‚
 
-1.  [‚±‚±](https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/Reference/index.html)‚ğQÆ
-2. [MySQL Installer](https://dev.mysql.com/downloads/installer/)‚ğ“üè‚µ‚ÄƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
-3. [Choosing a Setup Type]‚ÅA[Server only]‚ğ‘I‘ğ‚µ‚Ü‚·B
-4. [High Availability]‚ÅA[Standalone MySql Server]‚ğ‘I‘ğ‚µ‚Ü‚·B
-5. [Type and Networking]‚ÅA[Config Type] > [Server Computer]‚ğ‘I‘ğ‚µ‚Ü‚·B
-6. [Authentication Method]‚ÅA[Use Strong Password Encryption for Authentication (RECOMMENDED)]‚ğ‘I‘ğ‚µ‚Ü‚·B
+1. [MySQL Installer](https://dev.mysql.com/downloads/installer/)ã‚’å…¥æ‰‹ã—ã¦ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚
+2. [Choosing a Setup Type]ã§ã€[Server only]ã‚’é¸æŠã—ã¦æ¬¡ã«é€²ã¿ã¾ã™ã€‚  
+   ![MySQL_Config01.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config01.png)
+3. [Path Conflicts]ã§ã¯ã€ä½•ã‚‚å¤‰æ›´ã›ãšã«æ¬¡ã«é€²ã¿ã¾ã™ã€‚
+   ![MySQL_Config02.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config02.png)
+4. [Installation]ã§ã¯ã€[Execute]ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚  
+   ![MySQL_Config03.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config03.png)
+5. [Product Configuration]ã§ã¯ã€å˜ã«æ¬¡ã«é€²ã¿ã¾ã™ã€‚
+   ![MySQL_Config04.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config04.png)
+6. [High Availability]ã§ã€[Standalone MySql Server]ã‚’é¸æŠã—ã¾ã™ã€‚  
+   ![MySQL_Config05.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config05.png)
+7. [Type and Networking]ã§ã€[Config Type] > [Server Computer]ã‚’é¸æŠã—ã¾ã™ã€‚  
+   ![MySQL_Config06.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config06.png)
+8. [Authentication Method]ã§ã€[Use Strong Password Encryption for Authentication (RECOMMENDED)]ã‚’é¸æŠã—ã¾ã™ã€‚  
+   ![MySQL_Config07.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config07.png)
+8. [Authentication Method]ã§ã€[Use Strong Password Encryption for Authentication (RECOMMENDED)]ã‚’é¸æŠã—ã¾ã™ã€‚  
+   ![MySQL_Config07.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config07.png)
+9. [Account and Roles]ã§ã€Rootã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¨­å®šã—ã¾ã™ã€‚   
+   ![MySQL_Config08.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config08.png)
+10. ç¶šã‘ã¦[Add User]ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã‚µãƒ¼ãƒ“ã‚¹ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œæˆã—ã¾ã™ã€‚  
+   ã“ã“ã§ä½œæˆã™ã‚‹ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®[User Name]ã¨[Password]ã¯ã€MetadataServerã¸ã®æ¥ç¶šã«ä½¿ç”¨ã—ã¾ã™ã€‚  
+   ![MySQL_Config09.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config09.png)
+11. ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¿½åŠ ã•ã‚ŒãŸã“ã¨ã‚’ç¢ºèªã—ã¾ã™ã€‚
+   ![MySQL_Config10.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config10.png)
+12. [Windows Service]ã§ã¯ã€å˜ã«æ¬¡ã«é€²ã¿ã¾ã™ã€‚
+   ![MySQL_Config11.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config11.png)
+13. [Apply Configuration]ã§ã¯ã€[Execute]ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚  
+   ![MySQL_Config12.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config12.png)
+14. æœ€å¾Œã«[Finish]ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦[Product Configuration]ã‚’çµ‚äº†ã—ã¾ã™ã€‚
+   ![MySQL_Config13.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config13.png)
+15. æ¬¡ã¸é€²ã¿ã¾ã™ã€‚
+   ![MySQL_Config14.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config14.png)
+16. [Installation Complete]ã§ã€[Finish]ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’çµ‚äº†ã—ã¾ã™ã€‚  
+   ![MySQL_Config15.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config15.png)
