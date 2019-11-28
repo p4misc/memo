@@ -81,3 +81,52 @@
 
 16. [Installation Complete]で、[Finish]をクリックしてインストールを終了します。  
    ![MySQL_Config15.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config15.png)
+
+
+## UnrealGameSyncの設定
+
+1. UnrealGameSync.exeからMetadataServerに接続するために、`DeploymentSettings.cs`のApiUtilに接続先となるMetadataServerのURLを記述します。  
+   ![Publish_Config01.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/Publish_Config01.png)
+
+2. UnrealGameSyncプロジェクトをリビルドして、UnrealGameSync.exeをチームメンバに配布します。
+
+
+## MetadataServerの配備
+
+1. MetadataServerプロジェクトの直下に`Web.Release.config`と`Web.Debug.config`が存在します。  
+   配備するMetadataServerのソリューション構成(`Release`/`Debug`)に合わせて一方を`NotForLicensees`ディレクトリに配置します。  
+   配置する際に`Web.config`にリネームします。  
+
+2. `Web.config`を編集してMySQLに接続するための接続文字列を入力します。  
+   このとき、`UserId`と`password`にサービスアカウントの[User Name]と[Password]を記入します。  
+   ```xml
+   <connectionStrings>
+      <add name="ConnectionString" connectionString="server=localhost;UserId=p4misc;password=xxxxx;" providerName="MySql.Data.Client"/>
+   </connectionStrings>
+   ```  
+　　![Publish_Config02.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/Publish_Config02.png)  
+
+3. MetadataServerノードを右クリックしてコンテキストメニューを開き、[発行]をクリックします。  
+　　![Publish_Config03.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/Publish_Config03.png)  
+
+4. 発行ダイアログに[サーバ]、[サイト名]、[宛先 URL]を入力します。  
+   入力完了後に[接続の検証]を押して、接続確認をし、[保存]をクリックします。    
+　　![Publish_Config04.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/Publish_Config04.png)  
+
+5. 最後に[発行]をクリックすると、IISへの配備が完了します。
+　　![Publish_Config05.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/Publish_Config05.png) 
+  
+6. 配備完了後に http://localhost/MetadataServer/api/latest にアクセスして以下のように表示されればOKです。  
+   ```xml
+   <LatestData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/MetadataServer.Models">
+     <LastBuildId>0</LastBuildId>
+     <LastCommentId>0</LastCommentId>
+     <LastEventId>0</LastEventId>
+   </LatestData>
+   ```
+
+
+## 補足
+
+上記の手順では、`DeploymentSettings.cs`や[宛先 URL]に http://localhost/MetadataServer を指定していますが、実際はチームで共有するサーバになりますので、localhostを適切なFQDN / ホスト名 / IPアドレスにする必要があります。
+
