@@ -1,5 +1,15 @@
 # UnrealGameSyncのMetadataServerの構築方法に関するメモ
 
+## 各種バージョン
+- OS: Windows 10 Pro 1903
+- UE4: 4.23.1
+- IIS: 10.0.18362.1
+- MySQL: 8.0.18
+- .NET SDK: 4.6.2
+- Web Platform Installer: 5.0
+- ASP NET Web Publishing
+
+
 ## IISのインストール
 
 [Visual Studio を使用した ASP.NET Web 配置](https://docs.microsoft.com/ja-jp/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)の記事を参考にします。
@@ -127,6 +137,8 @@
    </LatestData>
    ```
 
+7. 配備成功時のIISマネジャーおよびディレクトリの状態例は下図のとおりです。
+　　![Publish_Config06.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/Publish_Config06.png)
 
 ## 補足
 
