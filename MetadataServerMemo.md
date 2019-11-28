@@ -65,9 +65,6 @@
 8. [Authentication Method]で、[Use Strong Password Encryption for Authentication (RECOMMENDED)]を選択します。  
    ![MySQL_Config07.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config07.png)
 
-8. [Authentication Method]で、[Use Strong Password Encryption for Authentication (RECOMMENDED)]を選択します。  
-   ![MySQL_Config07.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config07.png)
-
 9. [Account and Roles]で、Rootアカウントのパスワードを設定します。   
    ![MySQL_Config08.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config08.png)
 
