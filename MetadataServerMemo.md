@@ -7,7 +7,6 @@
 - MySQL: 8.0.18
 - .NET SDK: 4.6.2
 - Web Platform Installer: 5.0
-- ASP NET Web Publishing
 
 
 ## IISのインストール
