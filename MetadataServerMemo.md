@@ -1,5 +1,12 @@
 # UnrealGameSyncのMetadataServerの構築方法に関するメモ
 
+このメモではMetadataServerの構築方法を紹介します。  
+UnrealGameSyncの枠組みは下図を参照してください。
+
+## UnrealGameSyncの枠組み
+
+![IIS_Config01.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/UnrealGameSyncOverview.png)
+
 ## 各種バージョン
 - OS: Windows 10 Pro 1903
 - UE4: 4.23.1
