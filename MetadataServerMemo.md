@@ -7,7 +7,6 @@
 - MySQL: 8.0.18
 - .NET SDK: 4.6.2
 - Web Platform Installer: 5.0
-- ASP NET Web Publishing
 
 
 ## IISのインストール
@@ -62,9 +61,6 @@
 
 7. [Type and Networking]で、[Config Type] > [Server Computer]を選択します。  
    ![MySQL_Config06.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config06.png)
-
-8. [Authentication Method]で、[Use Strong Password Encryption for Authentication (RECOMMENDED)]を選択します。  
-   ![MySQL_Config07.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config07.png)
 
 8. [Authentication Method]で、[Use Strong Password Encryption for Authentication (RECOMMENDED)]を選択します。  
    ![MySQL_Config07.png](https://github.com/p4misc/memo/blob/master/MetadataServerMemo/MySQL_Config07.png)
